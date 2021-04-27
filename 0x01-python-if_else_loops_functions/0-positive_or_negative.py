@@ -8,4 +8,4 @@ if number > 0:
 elif number < 0:
 	print("{:d} is negative".format(number))
 else:
-	printf("{:d} is zero".format(number))
+	print("{:d} is zero".format(number))
