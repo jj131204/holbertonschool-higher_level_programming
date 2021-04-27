@@ -15,20 +15,15 @@ int check_cycle(listint_t *list)
 	if (!list)
 		return (0);
 
-	else
+	while (list && l)
 	{
-		while (list && l)
+		l = l->next->next;
+		list = list->next;
+		if (list == l)
 		{
-			l = l->next->next;
-			list = list->next;
-			if (list == l)
-			{
-				return (1);
-			}
+			return (1);
 		}
-
 	}
-
 
 return (0);
 }
