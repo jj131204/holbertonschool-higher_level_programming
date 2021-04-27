@@ -4,4 +4,4 @@ for j in range(0, 100):
     if j != 99:
         print("{:02d}, ".format(j), end="")
     else:
-        print("{}".format(j), end="")
+        print("{}".format(j))
