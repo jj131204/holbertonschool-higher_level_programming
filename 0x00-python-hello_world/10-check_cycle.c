@@ -10,11 +10,25 @@
 
 int check_cycle(listint_t *list)
 {
+	listint_t *l = list;
+
 	if (!list)
 		return (0);
 
 	else
-		return (1);
+	{
+		while (list && l)
+		{
+			l = l->next->next;
+			list = list->next;
+			if (list == l)
+			{
+				return (1);
+			}
+		}
+
+	}
+
 
 return (0);
 }
