@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     else:
         print("{} arguments.".format(j))
-    for i in range(2, j):
+    for i in range(1, j):
 
         if j > 1:
             print("{} :{} ".format(i, argv[i]))
