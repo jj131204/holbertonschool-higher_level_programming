@@ -5,11 +5,11 @@ if __name__ == "__main__":
 
     j = len(argv) - 1
     u = len(argv)
-    if j == 1:
+    if j == 0:
         print("{} arguments.".format(j))
 
     else:
-        if j == 2:
+        if j == 1:
             print("{} argument:".format(j))
         else:
             print("{} arguments:".format(j))
