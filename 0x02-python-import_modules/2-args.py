@@ -4,7 +4,6 @@ from sys import argv
 if __name__ == "__main__":
 
     j = len(argv) - 1
-    u = len(argv)
     if j == 0:
         print("{} arguments.".format(j))
 
@@ -14,5 +13,5 @@ if __name__ == "__main__":
         else:
             print("{} arguments:".format(j))
 
-        for i in range(1, u):
+        for i in range(1, len(argv)):
                 print("{}: {} ".format(i, argv[i]))
