@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import print_1
+import print_2
