@@ -2,7 +2,7 @@
 def best_score(a_dictionary):
     if a_dictionary:
         max_ = max(a_dictionary, key=a_dictionary.get)
-        return max
+        return max_
     else:
         # max_ = max(a_dictionary, key=a_dictionary.get)
         return None
