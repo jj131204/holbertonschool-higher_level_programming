@@ -33,5 +33,15 @@ class Rectangle:
 
         elif value < 0:
             raise ValueError("width must be >= 0")
+
         else:
             self.__height = value
+    """point2"""
+
+    def area(self):
+        _area = self.__width * self.__height
+        return _area
+
+    def perimeter(self):
+        _perimeter = (self.__width * 2) + (self.__height * 2)
+        return _perimeter
