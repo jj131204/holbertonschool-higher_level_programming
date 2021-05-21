@@ -8,6 +8,16 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
+    def __str__(self):
+        str_ = ""
+        if self.__width != 0 and self.__height != 0:
+            for h in range(self.__height):
+                for w in range(self.__width):
+                    str_ += "#"
+                str_ += "\n"
+
+            return str_[:-1]
+
     @property
     def width(self):
         return self.__width
@@ -50,13 +60,3 @@ class Rectangle:
         return _perimeter
 
     """point3"""
-
-    def __str__(self):
-        str_ = ""
-        if self.__width != 0 and self.__height != 0:
-            for h in range(self.__height):
-                for w in range(self.__width):
-                    str_ += "#"
-                str_ += "\n"
-
-            return str_[:-1]
