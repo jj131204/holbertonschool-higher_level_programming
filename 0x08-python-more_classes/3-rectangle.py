@@ -18,7 +18,7 @@ class Rectangle:
                 if h != self.__height - 1:
                     str_ += "\n"
 
-            return str_
+        return str_
 
     @property
     def width(self):
