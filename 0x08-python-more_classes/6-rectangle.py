@@ -16,15 +16,14 @@ class Rectangle:
     """point3"""
     def __str__(self):
 
-        str_ = ""
+        j = ""
         if self.__width != 0 and self.__height != 0:
             for h in range(self.__height):
                 for w in range(self.__width):
-                    str_ += "#"
+                    j += "#"
                 if h != self.__height - 1:
-                    str_ += "\n"
-
-        return str_
+                    j += "\n"
+        return j
     """end point3"""
 
     """point4"""
