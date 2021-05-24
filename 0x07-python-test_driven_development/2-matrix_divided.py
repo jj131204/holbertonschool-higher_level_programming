@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def matrix_divided(matrix, div):
 
     new_list = []
@@ -9,20 +10,20 @@ def matrix_divided(matrix, div):
 
     if n != j:
         raise TypeError("Each row of the matrix must have the same size")
-    
+
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
-    
+
     if div is 0:
         raise ZeroDivisionError("division by zero")
 
     for j in matrix:
         for a in j:
-            if type(a) is not int and  type(a) is not float:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            if type(a) is not int and type(a) is not float:
+                raise TypeError("matrix must be a matrix "
+                                "(list of lists) of integers/floats")
 
     for i in range(len(matrix)):
         new_list.append(list(map(lambda x: round(x / div, 2), matrix[i])))
 
     return new_list
-    
