@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+"""function that divides all elements of a matrix."""
 
 
 def matrix_divided(matrix, div):
-
+    """ Returning a divided matrix"""
     new_list = []
 
     n = len(matrix[0])

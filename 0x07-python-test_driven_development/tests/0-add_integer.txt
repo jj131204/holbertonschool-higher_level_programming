@@ -2,7 +2,6 @@ Import the function:
 
     >>> add_integer = __import__('0-add_integer').add_integer
 
-
 correct cases
     >>> add_integer(22, 1)
     23
