@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """ Unittest for max_integer([..]) """
+
+
 import unittest
 max_integer = __import__('6-max_integer').max_integer
+
 
 class TestMax_integer(unittest.TestCase):
     """class to  add testing"""
@@ -25,6 +28,3 @@ class TestMax_integer(unittest.TestCase):
         self.assertIsInstance(max_integer([1.5, 2.5, 3.5]), float)
 
         self.assertRaises(TypeError, max_integer, ["hello", 1, 2, 3])
-
-        
-
