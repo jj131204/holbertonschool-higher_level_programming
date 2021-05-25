@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 
 matrix = [
-
+    [1, 2, 3], [4, 5, 6]
 ]
-
 
 for j in matrix:
     for a in j:
-        if type(a) is not int and  type(a) is not float:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-
-
+        if type(a) is not int and type(a) is not float:
+            raise TypeError("matrix must be a matrix"
+                            "(list of lists) of integers/floats")
 
 list_1 = []
 for i in range(len(matrix)):
