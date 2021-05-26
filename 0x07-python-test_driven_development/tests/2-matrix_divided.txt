@@ -36,3 +36,8 @@ Error cases
     >>> matrix_divided()
     Traceback (most recent call last):
     TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Other cases
+
+    >>> matrix_divided([[3, 8], [12, 11]], -3)
+    [[-1.0, -2.67], [-4.0, -3.67]]
