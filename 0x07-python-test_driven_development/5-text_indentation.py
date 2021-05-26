@@ -7,15 +7,21 @@
 def text_indentation(text):
     """Delimiters: '.', '?', ':'"""
 
+    delimiters = [".", ":", "?"]
+    i = 0
+
     if type(text) != str:
         raise TypeError("text must be a string")
 
-    for i in range(len(text)):
-        if text[i] in ('.', '?', ':'):
-            print("{}\n".format(text[i]))
-            if i + 1 < len(text):
-                while text[i + 1] == " ":
-                    i += 1
-        else:
-            print(text[i], end='')
+    length = len(text)
+    while i < length:
+        print(text[i], end="")
+        if text[i] in delimiters:
+            print("\n")
+            try:
+                if text[i + 1] == " ":
+                    while text[i + 1] == " ":
+                        i += 1
+            except Exception:
+                pass
         i += 1
