@@ -4,6 +4,6 @@
 
 def read_file(filename=""):
     """read a text  file and print """
-    file_ = open(filename, 'r')
-
-    print(file_.read(), end="")
+    with open(filename, 'r') as file_:
+        print(file_.read(), end="")
+    file_.close()
