@@ -18,10 +18,12 @@ def add_items():
     if path.isfile("add_item.json"):
         new_list = load("add_item.json")
 
-    if len(argv) > 1:
+    new_list.extend(argv[1:])
+
+    """if len(argv) > 1:
 
         for i in range(1, len(argv)):
-            new_list.append(argv[i])
+            new_list.append(argv[i])"""
 
     """ Write the list with the new elements in the file """
     save(new_list, "add_item.json")
