@@ -12,7 +12,7 @@ if __name__ == "__main__":
     create = __import__('6-load_from_json_file').load_from_json_file
 
     if path.isfile("add_item.json"):
-        new_list = load_from_json_file("add_item.json")
+        new_list = create("add_item.json")
 
     """
     try:
