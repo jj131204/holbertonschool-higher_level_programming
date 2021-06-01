@@ -4,12 +4,13 @@
 from os import path
 from sys import argv
 
+write = __import__('5-save_to_json_file').save_to_json_file
+create = __import__('6-load_from_json_file').load_from_json_file
+
+
 if __name__ == "__main__":
 
     new_list = []
-
-    write = __import__('5-save_to_json_file').save_to_json_file
-    create = __import__('6-load_from_json_file').load_from_json_file
 
     if path.isfile("add_item.json"):
         new_list = create("add_item.json")
