@@ -26,3 +26,8 @@ class Student:
                     if x is y:
                         dic_[x] = self.__dict__[x]
             return dic_
+
+    def reload_from_json(self, json):
+        """this uses a file to update info"""
+        for x in json:
+            self.__dict__[x] = json[x]
