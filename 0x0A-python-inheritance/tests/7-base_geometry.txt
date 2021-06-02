@@ -3,34 +3,22 @@ Import
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
->>> bg = BaseGeometry()
->>> bg.integer_validator("my_int", 12)
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("juan", -1)
+	Traceback (most recent call last):
+	ValueError: juan must be greater than 0
 
 
->>> bg.integer_validator("name", "John")
-Traceback (most recent call last):
-TypeError: name must be an integer
+	>>> bg.integer_validator("juan", "jose")
+	Traceback (most recent call last):
+	TypeError: juan must be an integer
 
->>> bg.integer_validator("age", 0)
-Traceback (most recent call last):
-ValueError: age must be greater than 0
 
->>> bg.integer_validator("distance", -4)
-Traceback (most recent call last):
-ValueError: distance must be greater than 0
+	>>> bg.integer_validator("str", [1, 2, 3])
+	Traceback (most recent call last):
+	TypeError: str must be an integer
 
->>> bg.integer_validator("my_int", 12.22)
-Traceback (most recent call last):
-TypeError: my_int must be an integer
 
->>> bg.integer_validator()
-Traceback (most recent call last):
-TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
->>> bg.integer_validator("john")
-Traceback (most recent call last):
-TypeError: integer_validator() missing 1 required positional argument: 'value'
-
->>> bg.integer_validator("my_int", [1, 2])
-Traceback (most recent call last):
-TypeError: my_int must be an integer
+	>>> bg.integer_validator("hola", {"h", "o", "l", "a"})
+	Traceback (most recent call last):
+	TypeError: hola must be an integer
