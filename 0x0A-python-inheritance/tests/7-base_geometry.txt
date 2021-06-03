@@ -4,21 +4,41 @@ Import
 
 
 	>>> bg = BaseGeometry()
-	>>> bg.integer_validator("juan", -1)
+	>>> bg.integer_validator("hello", -2)
 	Traceback (most recent call last):
-	ValueError: juan must be greater than 0
+	ValueError: hello must be greater than 0
 
 
-	>>> bg.integer_validator("juan", "jose")
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("zero", 0)
 	Traceback (most recent call last):
-	TypeError: juan must be an integer
+	ValueError: zero must be greater than 0
 
 
-	>>> bg.integer_validator("str", [1, 2, 3])
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("name", "John")
 	Traceback (most recent call last):
-	TypeError: str must be an integer
+	TypeError: name must be an integer
 
 
-	>>> bg.integer_validator("hola", {"h", "o", "l", "a"})
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("list", [1, 2, 3])
 	Traceback (most recent call last):
-	TypeError: hola must be an integer
+	TypeError: list must be an integer
+
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("Tuple", (1, 2))
+	Traceback (most recent call last):
+	TypeError: Tuple must be an integer
+
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("dic", {1, 2, 3, 4})
+	Traceback (most recent call last):
+	TypeError: dic must be an integer
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("jj131204")
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
