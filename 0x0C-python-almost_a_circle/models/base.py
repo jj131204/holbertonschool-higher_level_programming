@@ -1,6 +1,6 @@
 #!/ur/bin/python3
 """
-
+    create class Base
 """
 
 
@@ -11,9 +11,9 @@ class Base:
 
     def __init__(self, id=None):
         """ def __init__(self, id=None): """
-        if id != None:
+        if id is not None:
             self.id = id
 
-        else:    
+        else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
