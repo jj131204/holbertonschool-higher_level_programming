@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """  Write the class Rectangle that inherits from Base: """
+
 from models.base import Base
 
 
 class Rectangle(Base):
-    """class Rectangle(Base)"""
+    """class Rectangle (Base)"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ def __init__(self, width, height, x=0, y=0, id=None): """
+        """ def __init__(self, width, height, x=0, y=0, id=None) """
 
         self.width = width
         self.height = height
@@ -17,25 +18,25 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Retrieves the width attribute."""
+        """width attribute."""
 
         return self.__width
 
     @property
     def height(self):
-        """Retrieves the height attribute."""
+        """height attribute."""
 
         return self.__height
 
     @property
     def x(self):
-        """Retrieves the x attribute."""
+        """x attribute."""
 
         return self.__x
 
     @property
     def y(self):
-        """Retrieves the y attribute."""
+        """y attribute."""
 
         return self.__y
 
