@@ -80,7 +80,7 @@ class Rectangle(Base):
         if type(value) != int:
             raise TypeError("y must be an integer")
 
-        elif value < 0:
+        if value < 0:
             raise ValueError("y must be >= 0")
 
         else:
@@ -90,5 +90,3 @@ class Rectangle(Base):
         """calculates the area"""
         area_ = self.__height * self.__width
         return area_
-
-    
