@@ -106,3 +106,10 @@ class Rectangle(Base):
                 print("#", end="")
 
             print()
+
+    def __str__(self):
+        """__str__"""
+        str_ = "[Rectangle] ({}) <{}>/<{}> - <{}>/{}>" .format(
+            self.id, self.__x, self.__y, self.__width, self.__height)
+
+        return str_
