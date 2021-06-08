@@ -85,3 +85,10 @@ class Rectangle(Base):
 
         else:
             self.__y = value
+
+    def area(self):
+        """area"""
+        area_ = self.__height * self.__width
+        return area_
+
+    
