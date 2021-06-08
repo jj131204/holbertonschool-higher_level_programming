@@ -147,3 +147,10 @@ class Rectangle(Base):
                     self.__y = args[4]
                 else:
                     break
+
+    def to_dictionary(self):
+        """Returns the dictionary"""
+
+        my_dict = {'id': self.id, 'width': self.__width,
+                   'height': self.__height, 'x': self.__x, 'y': self.__y}
+        return my_dict
