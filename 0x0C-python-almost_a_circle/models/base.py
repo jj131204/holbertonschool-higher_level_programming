@@ -32,13 +32,11 @@ class Base:
 
         str_ = []
 
-        if list_objs is None or list_objs == []:
-            str_ = "[]"
-        else:
+        if list_objs is not None:
             name = cls.__name__ + ".json"
 
             for i in list_objs:
                 str_.append(cls.to_dictionary(i))
 
-            with open(name, mode="w") as file:
-                file.write(cls.to_json_string(str_))
+        with open(name, mode="w") as file:
+            file.write(cls.to_json_string(str_))
