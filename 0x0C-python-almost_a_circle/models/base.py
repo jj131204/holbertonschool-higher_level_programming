@@ -42,4 +42,3 @@ class Base:
 
             with open(name, mode="w") as file:
                 file.write(cls.to_json_string(str_))
-
