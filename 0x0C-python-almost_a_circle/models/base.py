@@ -33,7 +33,7 @@ class Base:
         str_ = []
 
         if list_objs is None or list_objs == []:
-            str_ = str_
+            str_ = "[]"
         else:
             name = cls.__name__ + ".json"
 
