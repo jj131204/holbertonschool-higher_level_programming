@@ -83,13 +83,11 @@ class Rectangle(Base):
         else:
             self.__y = value
 
-    """ point 4 """
     def area(self):
         """area"""
         area_ = self.__height * self.__width
         return area_
 
-    """point 5 and point 7 """
     def display(self):
         """ display"""
 
@@ -106,15 +104,11 @@ class Rectangle(Base):
 
             print()
 
-
-    """point 6"""
     def __str__(self):
         str_ = "[Rectangle] ({}) <{}>/<{}> - <{}>/{}>" .format(
             self.id, self.__x, self.__y, self.__width, self.__height)
 
         return str_
-
-    """point 8"""
 
     def update(self, *args, **kwargs):
 
@@ -148,11 +142,9 @@ class Rectangle(Base):
                 else:
                     break
 
-
-    """point 12"""
     def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle."""
 
-        my_dict = {'id': self.id, 'width': self.__width, 
-                    'height': self.__height, 'x': self.__x, 'y': self.__y}
+        my_dict = {'id': self.id, 'width': self.__width,
+                   'height': self.__height, 'x': self.__x, 'y': self.__y}
         return my_dict
