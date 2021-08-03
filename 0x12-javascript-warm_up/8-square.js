@@ -1,13 +1,12 @@
 #!/usr/bin/node
 // c is fun
-const myVar = 'C is fun';
+const myVar = 'x';
 const arg = parseInt(process.argv[2]);
 let count;
 if (isNaN(arg)) {
-  console.log('Missing number of occurrences');
-}
-else {
+  console.log('Missing size');
+} else {
   for (count = 0; count < arg; count++) {
-    console.log(myVar);
+    console.log(myVar.repeat(arg));
   }
 }
