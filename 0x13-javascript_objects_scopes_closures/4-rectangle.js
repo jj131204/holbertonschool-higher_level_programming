@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// defining  class
+/* defining  class */
 class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0) {
@@ -7,23 +7,23 @@ class Rectangle {
       this.height = h;
     }
   }
+
   print () {
     let count;
     for (count = 0; count < this.height; count++) {
-       console.log('X'.repeat(this.width));
+      console.log('X'.repeat(this.width));
     }
   }
 
-
-  rotate() {
-    this.width = this.height;
-    this.height = this.width;
+  rotate () {
+    /* this.width = this.height;
+    this.height = this.width; */
+    [this.width, this.height] = [this.height, this.width];
   }
 
-  double() {
+  double () {
     this.width = this.width * 2;
     this.height = this.height * 2;
- }
-
+  }
 }
 module.exports = Rectangle;
