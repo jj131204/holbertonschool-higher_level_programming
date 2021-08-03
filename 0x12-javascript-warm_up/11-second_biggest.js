@@ -11,6 +11,7 @@ array.splice(array.indexOf(Math.max(...array)), 1);
 
 if (array.length === 0) {
   console.log(0);
-} else {
+}
+else {
   console.log(Math.max(...array));
 }
