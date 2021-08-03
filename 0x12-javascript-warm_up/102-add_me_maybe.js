@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//increments
+// increments
 exports.addMeMaybe = function (number, theFunction) {
   theFunction(number + 1);
 };
