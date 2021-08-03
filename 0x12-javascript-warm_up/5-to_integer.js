@@ -1,10 +1,9 @@
 #!/usr/bin/node
 // parseInt
-const myVar = process.argv[2];
-const integrer = parseInt(myVar);
-
-if (isNaN(integrer)) {
-  console.log('no funciono');
-} else {
+const myVar = parseInt(process.argv[2]);
+if (isNaN(myVar)) {
+  console.log('Not a number');
+}
+else {
   console.log(myVar);
 }
