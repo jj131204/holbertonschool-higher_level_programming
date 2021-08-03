@@ -7,11 +7,11 @@ class Rectangle {
       this.height = h;
     }
   }
-
   print () {
+
     let count;
     for (count = 0; count < this.height; count++) {
-      console.log('X'.repeat(this.width));
+       console.log('X'.repeat(this.width));
     }
   }
 
@@ -25,5 +25,6 @@ class Rectangle {
     this.width = this.width * 2;
     this.height = this.height * 2;
   }
+
 }
 module.exports = Rectangle;
