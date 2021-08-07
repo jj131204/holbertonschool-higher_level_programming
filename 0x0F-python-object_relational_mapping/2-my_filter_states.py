@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""lists all states with a name starting with N"""
+"""takes in an argument and displays all values in the states"""
 
 if __name__ == '__main__':
     """main"""
@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     cur = conn.cursor()
     cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'
-                'N%' ORDER BY states.id ASC".format(sname))
+                ORDER BY states.id ASC".format(sname))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
