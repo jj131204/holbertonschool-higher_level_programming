@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """test1"""
-if __name__ == "__main__":
+if __name__ == '__main__':
     """main"""
 
     import MySQLdb
-    import sys
+    from sys import argv
 
-    db = MySQLdb.connect(host='localhost', port=3306, user=sys.argv[1], password=sys.argv[2],  db=sys.argv[3])
+    db = MySQLdb.connect(host='localhost', port=3306,
+                         user=argv[1], password=argv[2], db=argv[3])
 
     cursor = db.cursor()
 
