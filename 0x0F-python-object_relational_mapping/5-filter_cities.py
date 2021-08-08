@@ -21,4 +21,4 @@ if __name__ == '__main__':
     for row in rows:
         """print(row[0] + ", ",end="")"""
         test += (row[0] + ", ")
-    print(test[0:-2], end="")
+    print(test[0:-2])
