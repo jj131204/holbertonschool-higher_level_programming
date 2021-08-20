@@ -2,13 +2,14 @@
 """ python """
 
 def find_peak(list_of_integers):
-    """ peak """
+    """peak"""
+
 
     if (list_of_integers):
         list_of_integers.sort()
-        peak_ = list_of_integers[-1]
+        peak_ = list_of_integers
 
-        return peak_
+        return peak_[-1]
 
     else:
         return None
