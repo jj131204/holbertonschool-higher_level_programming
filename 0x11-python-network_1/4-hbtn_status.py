@@ -11,4 +11,4 @@ if __name__ == "__main__":
 
     print("Body response:")
     print("\t- type: {}".format(type(url.text)))
-    print("\n\t- content: {}".format(url.text))
+    print("\t- content: {}".format(url.text))
