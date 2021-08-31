@@ -1,9 +1,6 @@
 #!/usr/bin/python3
-"""
-script that lists all State objects, and corresponding City objects,
-contained in the database
-"""
-
+"""script that lists all State objects, and corresponding City objects,
+contained in the database"""
 
 if __name__ == "__main__":
     from relationship_city import City
