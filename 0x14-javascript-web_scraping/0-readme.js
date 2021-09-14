@@ -5,13 +5,10 @@ const argv = process.argv[2];
 
 const fs = require('fs');
 
-
-
 fs.readFile(argv, 'utf-8', (err, data) => {
-  if(err){
+  if (err) {
     console.log('error: ', err);
-  }
-  else {
+  } else {
     console.log(data);
   }
 });
