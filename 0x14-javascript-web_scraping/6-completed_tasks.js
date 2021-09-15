@@ -4,7 +4,7 @@
 const request = require('request');
 const argv1 = process.argv[2];
 
-request(argv, function (err, res, body) {
+request(argv1, function (err, res, body) {
   if (err) {
     console.log(err);
   }
